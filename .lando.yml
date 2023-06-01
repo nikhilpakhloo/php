@@ -1,0 +1,4 @@
+name: php
+recipe: lamp
+config:
+  webroot: .
