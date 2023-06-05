@@ -266,16 +266,16 @@
 
         echo "<br>";
 
-        $person = array(
+        $person = [
             'name' => "Nikhil Pakhloo",
             2 => 25,
-            'contacts' => array(
+            'contacts' => [
                 'email' => "Nikhilpakhloo@gmail.com",
                 1 => "8894784521"
-            )
+            ]
 
 
-        );
+        ];
         echo $person['name'];
         echo "<br>";
         echo $person[2];
@@ -358,48 +358,55 @@
                 echo "Size: " . $this->size . "\n";
                 echo "Breed: " . $this->breed . "\n";
             }
-            public function printProperties() {
+            public function printProperties()
+            {
                 echo "Name: " . $this->name . "\n";
                 echo "Color: " . $this->color . "\n";
                 echo "Size: " . $this->size . "\n";
                 echo "Breed: " . $this->breed . "\n";
             }
-            public function getName() {
+            public function getName()
+            {
                 return $this->name;
             }
-            
+
             // Getter method for retrieving the color
-            public function getColor() {
+            public function getColor()
+            {
                 return $this->color;
             }
-            
+
             // Getter method for retrieving the size
-            public function getSize() {
+            public function getSize()
+            {
                 return $this->size;
             }
-            
+
             // Getter method for retrieving the breed
-            public function getBreed() {
+            public function getBreed()
+            {
                 return $this->breed;
             }
         }
 
         // Create an instance of the Dog class
         $dog1 = new Dog("Buddy<br>", "Brown<br>", "Medium<br>", "Labrador Retriever<br>");
-        
+
 
         // Display information about the dog
         $dog1->displayInfo();
         echo "Created another method to call  the properties of same class: <br>";
-        $dog2 = new Dog("Shampoo<br>","White<br>","Medium<br>","Vodafone wala kutta<br>");
+        $dog2 = new Dog("Shampoo<br>", "White<br>", "Medium<br>", "Vodafone wala kutta<br>");
         $dog2->printProperties();
-        echo "Name:".$dog2->getName()."<br>";
-        echo "Color:".$dog2->getColor()."<br>";
-        echo "Size:".$dog2->getSize()."<br>";
-        echo "Breed" .$dog2->getBreed()."<br>";
-       
+        echo "Name:" . $dog2->getName() . "<br>";
+        echo "Color:" . $dog2->getColor() . "<br>";
+        echo "Size:" . $dog2->getSize() . "<br>";
+        echo "Breed" . $dog2->getBreed() . "<br>";
 
-        
+
+        echo '<br>';
+
+
         ?>
 
 
@@ -430,7 +437,8 @@
 
 
 
-        
+
+
 
     </div>
 </body>
